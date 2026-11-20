@@ -1,0 +1,35 @@
+{
+  "note": "Reported results from the evaluation notebooks / slides (file-grouped splits, 5-seed averages for the paragraph stages; base paper = 60/40 document split).",
+  "stages": [
+    {
+      "name": "Base paper (Qureshi 2019)",
+      "unit": "whole documents",
+      "brown": "96.3%",
+      "bnc": "97.3%"
+    },
+    {
+      "name": "Short-text features (Kazmi 2022)",
+      "unit": "paragraphs",
+      "brown": "88.7%",
+      "bnc": "95.9%"
+    },
+    {
+      "name": "+ Handcrafted temporal features",
+      "unit": "paragraphs",
+      "brown": "92.5%",
+      "bnc": "96.1%"
+    },
+    {
+      "name": "Neural network (no time)",
+      "unit": "paragraphs",
+      "brown": "93.1%",
+      "bnc": "97.3%"
+    },
+    {
+      "name": "Narrative-time neural (Time2Vec)",
+      "unit": "paragraphs",
+      "brown": "92.5–93.0%",
+      "bnc": "97.3–97.4%"
+    }
+  ]
+}
